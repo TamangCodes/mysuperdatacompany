@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Successful</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <a href="{% url 'download_file_as_json' file_id=file_id %}">
+        <button>Download File as JSON</button>
+    </a>
+</body>
+</html>
