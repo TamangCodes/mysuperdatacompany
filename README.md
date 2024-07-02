@@ -55,16 +55,13 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 
 ## Project Structure
 mysuperdatacompany/
-│
 ├── myapp/
 │   ├── models.py
 │   ├── views.py
 │   └── utils.py
-│
 ├── mysuperdatacompany/
 │   ├── settings.py
 │   └── urls.py
-│
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
