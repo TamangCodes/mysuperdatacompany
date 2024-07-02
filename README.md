@@ -7,7 +7,7 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 ## Features
 
 - File upload support for JSON and CSV formats
-- Simple data querying with optional file type filtering
+- Deafult data download for an uploaded files in JSON
 - Docker-based deployment for easy setup and testing
 - Built with Python, Django, and PostgreSQL
 
@@ -20,14 +20,16 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 
 1. Clone the repository:
    git clone https://github.com/amreita/mysuperdatacompany.git
+
    cd mysuperdatacompany
-2. Build and start the Docker containers:
+   
+3. Build and start the Docker containers:
    docker-compose up --build
 
-3. Apply database migrations:
+4. Apply database migrations:
   docker-compose exec web python manage.py migrate
    
-4. The application is now running at `http://localhost:8000`
+5. The application is now running at `http://localhost:8000`
 
 ## API Endpoints
 
