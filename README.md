@@ -48,7 +48,7 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 - **URL:** `/download/`
 - **Method:** GET
 - **URL Params:** 
-- `type` (optional): Filter by file type ('json' or 'csv')
+- `type` (default): File type ('json')
 - **Success Response:** 
 - **Code:** 200
 - **Content:** JSON array of data entries
