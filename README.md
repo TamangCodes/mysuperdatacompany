@@ -19,12 +19,14 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 ## Quick Start
 
 1. Clone the repository:
+   git clone https://github.com/amreita/mysuperdatacompany.git
+   cd mysuperdatacompany
 2. Build and start the Docker containers:
-docker-compose up --build
-Copy
+   docker-compose up --build
+
 3. Apply database migrations:
-docker-compose exec web python manage.py migrate
-Copy
+  docker-compose exec web python manage.py migrate
+   
 4. The application is now running at `http://localhost:8000`
 
 ## API Endpoints
@@ -67,7 +69,7 @@ mysuperdatacompany/
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
-Copy
+
 ## Development
 
 To make changes to the project:
@@ -75,7 +77,7 @@ To make changes to the project:
 1. Modify the code as needed
 2. Rebuild the Docker containers:
 docker-compose up --build
-Copy
+
 ## Testing
 
 For this proof of concept, testing is performed manually. Use tools like cURL or Postman to test the API endpoints.
