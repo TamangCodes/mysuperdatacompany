@@ -86,10 +86,10 @@ curl -X POST -F "file=@path/to/your/file.json" http://localhost:8000/upload/
 Copy
 2. Query data:
 curl http://localhost:8000/query/
-Copy
+   
 3. Query data with type filter:
 curl http://localhost:8000/query/?type=json
-Copy
+
 ## Future Improvements
 
 - Implement user authentication
@@ -101,7 +101,3 @@ Copy
 ## Contributing
 
 This is a proof of concept project. For any suggestions or improvements, please open an issue or submit a pull request.
-
-## License
-
-[MIT License](https://opensource.org/licenses/MIT)
