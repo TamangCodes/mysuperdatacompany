@@ -43,7 +43,7 @@ Copy
 - **Content:** `{ "error": "Unsupported file type" }`
 
 ### Query Data
-- **URL:** `/query/`
+- **URL:** `/download/`
 - **Method:** GET
 - **URL Params:** 
 - `type` (optional): Filter by file type ('json' or 'csv')
