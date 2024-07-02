@@ -1,4 +1,4 @@
-# MySuperDataCompany Data Engine
+# MySuperDataCompany
 
 ## Overview
 
