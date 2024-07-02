@@ -29,7 +29,10 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 4. Apply database migrations:
   docker-compose exec web python manage.py migrate
    
-5. The application is now running at `http://localhost:8000`
+   
+6. The application is now running at `http://localhost:8000`
+
+Note: running in MAC OS: python3 manage.py migrate
 
 ## API Endpoints
 
@@ -46,7 +49,7 @@ This project is a proof of concept for MySuperDataCompany Inc., demonstrating a 
 - **Code:** 400
 - **Content:** `{ "error": "Unsupported file type" }`
 
-### Query Data
+### Download Data
 - **URL:** `/download/`
 - **Method:** GET
 - **URL Params:** 
@@ -75,7 +78,7 @@ To make changes to the project:
 
 1. Modify the code as needed
 2. Rebuild the Docker containers:
-docker-compose up --build
+   docker-compose up --build
 
 ## Testing
 
@@ -85,12 +88,12 @@ Example cURL commands:
 
 1. Upload a file:
 curl -X POST -F "file=@path/to/your/file.json" http://localhost:8000/upload/
-Copy
-2. Query data:
+
+2. Download data:
 curl http://localhost:8000/query/
    
-3. Query data with type filter:
-curl http://localhost:8000/query/?type=json
+3. Download data with type filter:
+curl http://localhost:8000/download/?type=json
 
 ## Future Improvements
 
@@ -99,6 +102,7 @@ curl http://localhost:8000/query/?type=json
 - Enhance error handling and logging
 - Implement more advanced querying capabilities
 - Optimize for large file uploads and data processing
+  
 
 ## Contributing
 
